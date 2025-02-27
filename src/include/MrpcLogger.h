@@ -37,6 +37,6 @@ class MrpcLogger
         }
 
     private:
-}
+};
 
 #endif // !__MRPCLOGGER__H__
