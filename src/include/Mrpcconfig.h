@@ -14,7 +14,7 @@ class Mrpcconfig
     private:
         // 存储配置信息
         std::unordered_map<std::string,std::string> config_map;
-        // 处理获取的配置信息的字符串 删除前后空格、隐藏字符
+        // 处理获取的配置信息的字符串 删除前后空格
         void trim(std::string &read_buf);
 };
 
