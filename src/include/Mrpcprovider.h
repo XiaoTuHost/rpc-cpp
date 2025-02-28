@@ -14,12 +14,12 @@
 #include <unordered_map>
 
 // rpc核心服务实现
-class Mrpcprovider
+class MrpcProvider
 {
     public:
         void notifyService(google::protobuf::Service* service);
-        ~Mrpcprovider();
-        void run();
+        ~MrpcProvider();
+        void run(); 
     private:
         muduo::net::EventLoop event_loop;
         struct ServiceInfo 

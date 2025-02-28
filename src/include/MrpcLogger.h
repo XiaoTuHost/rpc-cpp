@@ -20,19 +20,19 @@ class MrpcLogger
             google::ShutdownGoogleLogging();
         }
 
-        static void info(const std::string& message){
+        static void INFO(const std::string& message){
             LOG(INFO)<<message;
         }
 
-        static void warning(const std::string& message){
+        static void WARNING(const std::string& message){
             LOG(WARNING)<<message;
         }   
 
-        static void error(const std::string& message){
+        static void ERROR(const std::string& message){
             LOG(ERROR)<<message;
         }
 
-        static void fatal(const std::string& message){
+        static void FATAL(const std::string& message){
             LOG(FATAL)<<message;
         }
 
