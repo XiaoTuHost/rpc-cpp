@@ -1,8 +1,8 @@
-file(GLOB Client_SRCS ${CMAKE_SOURCE_DIR}/*.cc)
+file(GLOB CLIENT_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/*.cc)
 
-file(GLOB PROTO_SRCS ${CMAKE_SOURCE_DIR}/../*.pb.cc)
+file(GLOB PROTO_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/../*.pb.cc)
 
-add_executable(client ${Client_SRCS} ${PROTO_SRCS})
+add_executable(client ${CLIENT_SRCS} ${PROTO_SRCS})
 
 target_link_libraries(client mrpc_core ${LIBS})
 

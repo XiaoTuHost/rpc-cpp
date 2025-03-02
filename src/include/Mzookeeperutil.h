@@ -11,11 +11,11 @@ class ZkClient
     public:
         ZkClient();
         ~ZkClient();
-        void start();
+        void Start();
         // 创建zk节点
-        void create(const char* path,const char* data,int datalen,int state=0);
+        void Create(const char* path,const char* data,int datalen,int state=0);
         // 获取节点数据
-        std::string getData(const char* path);
+        std::string GetData(const char* path);
     private:
         zhandle_t* m_zhandle;
 };

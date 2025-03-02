@@ -149,8 +149,3 @@ MrpcChannel::MrpcChannel(bool connectNow)
         rt = newConnect(m_ip.c_str(),m_port);
     }
 }   
-
-MrpcChannel::~MrpcChannel()
-{
-
-}

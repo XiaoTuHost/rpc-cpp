@@ -3,7 +3,7 @@
 #define __MRPCCHANNEL__H__
 
 #include <google/protobuf/service.h>
-#include <zookeeperutil.h>
+#include "Mzookeeperutil.h"
 
 class MrpcChannel : public google::protobuf::RpcChannel
 {
