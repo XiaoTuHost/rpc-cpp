@@ -5,22 +5,39 @@ Mrpccontroller::Mrpccontroller()
 {
 }
 
-void Mrpccontroller::reset(){
+void Mrpccontroller::Reset(){
     m_failed = false;
     m_errText = "";
 }
 
-bool Mrpccontroller::failed()const 
+bool Mrpccontroller::Failed()const 
 {
     return m_failed;
 }
 
-std::string Mrpccontroller::errText() const
+std::string Mrpccontroller::ErrorText() const
 {
     return m_errText;
 }
 
-void Mrpccontroller::setFailed(const std::string& reason){
+void Mrpccontroller::SetFailed(const std::string& reason){
     m_failed=true;
     m_errText = reason;
+}
+
+// TODO
+
+void Mrpccontroller::StartCancel()
+{
+
+}
+
+bool Mrpccontroller::IsCanceled() const
+{
+
+}
+
+void Mrpccontroller::NotifyOnCancel(google::protobuf::Closure* callback)
+{
+
 }
