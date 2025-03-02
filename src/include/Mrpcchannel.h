@@ -5,11 +5,11 @@
 #include <google/protobuf/service.h>
 #include <zookeeperutil.h>
 
-class Mrpcchannel : public google::protobuf::RpcChannel
+class MrpcChannel : public google::protobuf::RpcChannel
 {
     public:
-        Mrpcchannel(bool connectNow);
-        virtual ~Mrpcchannel()
+        MrpcChannel(bool connectNow);
+        virtual ~MrpcChannel()
         {
         }
         /*
@@ -29,7 +29,7 @@ class Mrpcchannel : public google::protobuf::RpcChannel
                     ) override;
         
     private:
-        int m_client;
+        int m_clientfd;
         std::string service_name;
         std::string m_ip;
         uint16_t m_port;
